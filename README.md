@@ -11,16 +11,32 @@ CopF is a collection of Bash scripts that leverage [Charm's Gum](https://github.
 
 ## Installation
 
+## Optional Automated Installation for Arch Linux and Wayland Users
+
+For Arch Linux and Wayland users, an optional `install.sh` script is provided to automate the installation process. This script will install Go and Charm's Gum (if not already installed), clone the CopF repository, make the scripts executable, set up aliases, and copy the CopF path to the clipboard.
+
+To use the automated installation script, follow these steps:
+
+1. Make the script executable:
+
+  ```bash
+  chmod +x install.sh
+  ```
+
+2. Run the script:
+  ```bash
+  ./install.sh
+  ```
+
+3. Restart your terminal for the changes to take effect.
+
+Please note that this script is specifically designed for Arch Linux and Wayland users. If you are using a different Linux distribution or display server, you may need to manually follow the installation steps.
+
 ### Prerequisites
 
 1. **Go:** 
 
 You can download it from [the official Go website](https://golang.org/dl/). After installing, make sure `go` is in your system's `PATH`.
-In Arch Linux simply run:
-
-  ```bash
-  sudo pacman -S go
-  ```
   
 2. **Charm's Gum:** 
 
