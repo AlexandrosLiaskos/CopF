@@ -1,6 +1,9 @@
-![240326_18h03m45s_screenshot](https://github.com/AlexandrosLiaskos/CopF/assets/128935863/aebfd2a8-cc4d-45e5-9e71-ec28e6166b44)
-
-# Interactive File and Directory Path Copier
+<p align="center">
+    <img src="https://github.com/AlexandrosLiaskos/CopF/assets/128935863/aebfd2a8-cc4d-45e5-9e71-ec28e6166b44" alt="TauNest" width="250"/>
+</p>
+<h1 align="center">
+    Interactive File and Directory Path Copier
+</h1>
 
 CopF is a collection of Bash scripts that leverage [Charm's Gum](https://github.com/charmbracelet/gum) tool to provide an interactive way to list and copy file or directory paths to the clipboard in the terminal.
 
