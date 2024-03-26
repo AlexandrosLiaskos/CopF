@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/AlexandrosLiaskos/CopF/assets/128935863/aebfd2a8-cc4d-45e5-9e71-ec28e6166b44" alt="TauNest" width="250"/>
+    <img src="https://github.com/AlexandrosLiaskos/CopF/assets/128935863/aebfd2a8-cc4d-45e5-9e71-ec28e6166b44" alt="TauNest" width="200"/>
 </p>
 <h1 align="center">
     Interactive File and Directory Path Copier
