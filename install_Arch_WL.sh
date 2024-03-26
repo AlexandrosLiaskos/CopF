@@ -1,3 +1,21 @@
+#!/bin/bash
+
+# Check if Go is installed and up to date
+if ! command -v go &> /dev/null || ! go version | grep -q "go1.18"; then
+    echo "Installing or updating Go..."
+    sudo pacman -S go --noconfirm
+else
+    echo "Go is already installed and up to date."
+fi
+
+# Check if Charm's Gum is installed and up to date
+if ! command -v gum &> /dev/null || ! gum version | grep -q "gum version"; then
+    echo "Installing or updating Charm's Gum..."
+    go install github.com/charmbracelet/gum@latest
+else
+    echo "Charm's Gum is already installed and up to date."
+fi
+
 # Clone the CopF repository
 echo "Cloning CopF repository..."
 git clone https://github.com/AlexandrosLiaskos/CopF.git
@@ -8,19 +26,6 @@ cd CopF
 # Make the scripts executable
 echo "Making scripts executable..."
 chmod +x copfl.sh copfls.sh copfd.sh copfds.sh
-
-# Determine the clipboard command based on the display server
-if [ -n "$WAYLAND_DISPLAY" ]; then
-    clipboard_command="wl-copy"
-elif [ -n "$DISPLAY" ]; then
-    clipboard_command="xclip -selection clipboard"
-else
-    echo "Could not detect display server. Exiting."
-    exit 1
-fi
-
-# Update scripts to use the determined clipboard command
-sed -i "s|wl-copy|$clipboard_command|g" copfl.sh copfls.sh copfd.sh copfds.sh
 
 # Choose the shell and set up aliases
 echo "Choose your shell:"
