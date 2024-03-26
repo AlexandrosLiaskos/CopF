@@ -40,8 +40,7 @@ To use the automated configuration script, follow these steps:
 
 ## Optional Automated Installation for Arch Linux and Wayland Users
 
-For Arch Linux and Wayland users, an optional `install.sh` script is provided to automate the installation process. This script will install Go and Charm's Gum (if not already installed), clone the CopF repository, make the scripts executable, set up aliases, and copy the CopF path to the clipboard.
-
+For Arch Linux and Wayland users, an optional `install.sh` script is provided to automate the installation process.
 To use the automated installation script, follow these steps:
 
 1. Make the script executable:
